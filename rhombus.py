@@ -17,12 +17,12 @@ def connect_horizontal_blocks(block_left, block_rigth):
 def connect_vertical_blocks(block_top, block_bottom):    
     return block_top+block_bottom
     
-block_left=get_block('@', 5,'\\')
+block_left=get_block('@', 5,'/')
 block_rigth=get_block('@', 5,'\\')
 
 top_part=connect_horizontal_blocks(block_left,block_rigth)
 
-block_left=get_block('@', 5,'/')
+block_left=get_block('@', 5,'\\')
 block_rigth=get_block('@', 5,'/')
 
 bottom_part=connect_horizontal_blocks(block_left,block_rigth)
