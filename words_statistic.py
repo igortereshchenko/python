@@ -7,7 +7,7 @@ def clear_words(words):
         if ',.:;!?-'.find(word[len(word)-1])>=0:
             word_cleared=word[:len(word)-1]
             if len(word_cleared)>0:
-                words_cleared.append(word_cleared)
+                words_cleared.append(word_cleared.lower())
         else:
             words_cleared.append(word.lower())
     
