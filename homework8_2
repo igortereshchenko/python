@@ -1,0 +1,25 @@
+def create_matrix(size):
+    result=[]
+    for i in range(size-1,-1,-1):
+        row=[]
+        for j in range(i+1):
+            row.append(j+1) 
+            
+        result.append(row)
+    return result
+    
+    
+def print_matrix(matrix):
+    size=len(matrix)
+    for i in range(size):
+        for j in range(size):
+            if j>=i:
+                print(matrix[i][j-i],end='')
+            else:
+                print(matrix[j][i-j],end='')
+                    
+        
+        print('')
+    
+    
+print_matrix(create_matrix(9))
